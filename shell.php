@@ -1,6 +1,7 @@
 <?php
 
+$host = $_GET[‘host’];
 
-echo system("hostname");
+echo system(“ping -c 3 $host”);
 
 ?>
